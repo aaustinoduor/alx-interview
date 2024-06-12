@@ -22,5 +22,5 @@ def minOperations(n):
         if n % j == 0:
             while n % j == 0:
                 n /= j
-                factor_list.append(i)
+                factor_list.append(j)
     return sum(factor_list)
