@@ -4,7 +4,7 @@ const request = require('request');
 
 const req = (arr, j) => {
   if (j === arr.length) return;
-  request(arr[j],(err, response, body) => {
+  request(arr[j], (err, response, body) => {
     if (err) {
       throw err;
     } else {
