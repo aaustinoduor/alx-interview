@@ -19,7 +19,7 @@ def isWinner(x, nums):
     Raises:
         None.
     '''
-    # Check for invalid input
+    # check for invalid input
     if x <= 0 or nums is None:
         return None
     if x != len(nums):
@@ -33,7 +33,7 @@ def isWinner(x, nums):
     # First two elements of the list, a[0] and a[1], are set to 0
     # because 0 and 1 are not prime numbers
     a[0], a[1] = 0, 0
-    # use Sieve of Eratosthenes algorithm to generate array of prime numbers
+    # use sieve of Eratosthenes algorithm to generate array of prime numbers
     for j in range(2, len(a)):
         rm_multiples(a, j)
     # play each round of game
@@ -66,7 +66,7 @@ def rm_multiples(ls, x):
     Raises:
         None.
     '''
-    # This loop iterates over multiples of prime number and marks them as
+    # this loop iterates over multiples of prime number and marks them as
     # non-prime by setting their corresponding value to 0 in input
     # list ls. Starting from 2, it sets every multiple of x up to 
     # length of ls to 0. If index j * x is out of range for list ls,
